@@ -1,0 +1,2 @@
+module MyIdeasHelper
+end

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Picture des:</strong>
+  <%= @my_idea.picture_des %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= image_tag(@my_idea.picture_url, width: 600) if @my_idea.present? %>
+</p>
+
+<%= link_to 'Edit', edit_my_idea_path(@my_idea) %> |
+<%= link_to 'Back', my_ideas_path %>
